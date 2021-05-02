@@ -23,6 +23,9 @@ def location(message):
 # @bot.message_handler(func=lambda message: message.document.mime_type == 'text/plain', content_types=['document'])
 # def handle_text_doc(message):
 	
+@bot.message_handler(commands=['quiz'])
+def quiz(message):
+    bot.reply_to(message, "Feature yet to come.")
 
 bot.polling()
 print("Bot started...")
